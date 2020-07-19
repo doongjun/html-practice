@@ -6,47 +6,40 @@
     <meta name="description" content="Welcome to my kakao clone" />
     <title>Inline example</title>
     <style>
-      body, html{
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      body{
-        height: 400%;
+      /* input[required="required"]{
         background-color: red;
       }
-      /* position static, fixed 
-      #boxOne{
-        height:300px;
-        width:300px;
-        background-color: yellow;
-        position:static;
+      input[type="submit"]{
+        background-color: blue;
       }
-      #boxTwo{
-        height:300px;
-        width:300px;
-        background-color: green;
-        position:fixed;
-        
+      input + .box{
+        border: 1px solid yellow;
       } */
-      .abs-box{
-        width: 400px;
-        height: 400px;
+      /* .container > .box{
+        background-color: purple;
+      } */
+      .box{
         background-color: green;
-        position:relative;
+        display: block;
+        height: 100px;
+        border: 1px solid black;
       }
-      .childabs-box{
+      .box:last-child{
+        background-color: pink;
+      }
+      .child{
         width: 50px;
-        height: 50px;
-        background-color: indigo;
-        position: absolute;
-        right: 0;
       }
-
     </style>
   <body>
-    <div class="abs-box">
-      <div class="childabs-box"></div>
+    <div class="container">
+      <div class="box"></div>
+        <div class="box child"></div>
+      <div class="box"></div>
+      <div class="box">
+        <input type="password" required="required" />
+        <input type="submit">
+      </div>
     </div>
   </body>
 </html>
