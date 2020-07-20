@@ -2,26 +2,27 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="author" content="dongga" />
-    <meta name="description" content="Welcome to my kakao clone" />
-    <title>css states</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Transformations</title>
     <style>
-      .box{
+      .box {
+        width: 100px;
+        height: 100px;
         background-color: red;
-        font-size: 40px;
+        animation: 1.5s scaleAndRotateSquare ease-in-out;
       }
-      .box:hover{
-        background-color: pink;
-      } 
-      .box:active{
-        background-color: green;
+      @keyframes scaleAndRotateSquare {
+        from {
+          transform: none;
+        }
+        to {
+          transform: rotate(1turn) scale(0.5, 0.5);
+        }
       }
-     .box:focus{
-       background-color: blue;
-     }
-
     </style>
+  </head>
   <body>
-    <textarea class="box">lalalala</textarea>
+    <div class="box"></div>
   </body>
 </html>
