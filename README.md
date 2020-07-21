@@ -1,3 +1,3 @@
-# kakao-clone
+# html
 
-Kakao Desktop App Clone
+practice
